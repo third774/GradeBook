@@ -1,0 +1,6 @@
+c:\users\kkipp.the_moon\documents\visual studio 2015\Projects\Learning-C-Sharp\Grades\Grades\bin\Debug\Grades.pdb
+c:\users\kkipp.the_moon\documents\visual studio 2015\Projects\Learning-C-Sharp\Grades\Grades\obj\Debug\Grades.csprojResolveAssemblyReference.cache
+c:\users\kkipp.the_moon\documents\visual studio 2015\Projects\Learning-C-Sharp\Grades\Grades\obj\Debug\Grades.pdb
+C:\Users\kkipp.THE_MOON\Documents\Visual Studio 2015\Projects\Learning-C-Sharp\Grades\Grades\bin\Debug\Grades.exe.config
+C:\Users\kkipp.THE_MOON\Documents\Visual Studio 2015\Projects\Learning-C-Sharp\Grades\Grades\bin\Debug\Grades.exe
+C:\Users\kkipp.THE_MOON\Documents\Visual Studio 2015\Projects\Learning-C-Sharp\Grades\Grades\obj\Debug\Grades.exe
