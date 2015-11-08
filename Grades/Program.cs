@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Net;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Grades
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            IGradeTracker book = CreateGradeBook();
+            var book = CreateGradeBook();
             // GetBookName(book);
             AddGrades(book);
             SaveGrades(book);
@@ -27,7 +21,7 @@ namespace Grades
 
         private static void WriteResults(IGradeTracker book)
         {
-            GradeStatistics stats = book.ComputeStatistics();
+            var stats = book.ComputeStatistics();
 
             WriteResult("Average", stats.AverageGrade);
             WriteResult("Highest", stats.HighestGrade);
@@ -37,7 +31,7 @@ namespace Grades
 
         private static void SaveGrades(IGradeTracker book)
         {
-            using (StreamWriter outputFile = File.CreateText("grades.txt"))
+            using (var outputFile = File.CreateText("grades.txt"))
             {
                 book.WriteGrades(outputFile);
             }
@@ -69,15 +63,16 @@ namespace Grades
             }
             finally
             {
-                // ...
+                // ....
             }
         }
 
-        static void WriteResult(string description, float result)
+        private static void WriteResult(string description, float result)
         {
             Console.WriteLine($"{description}: {result:F2}");
         }
-        static void WriteResult(string description, string result)
+
+        private static void WriteResult(string description, string result)
         {
             Console.WriteLine($"{description}: {result}");
         }
